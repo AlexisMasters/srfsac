@@ -382,25 +382,26 @@ ul.dropdown {
   padding: 0;
   list-style: none; }
 
-.thumbnails ul, .thumbnails li {
+#gallery_display.thumbnails ul, #gallery_display.thumbnails li, .thumbnails ul, .thumbnails li {
   -webkit-padding-start: 0;
   margin: 0;
   padding: 0;
   list-style: none inside; }
-.thumbnails dl {
-  float: left;
+#gallery_display.thumbnails dl, .thumbnails dl {
   text-align: center;
   font-size: small; }
-.thumbnails dt, .thumbnails dd {
+#gallery_display.thumbnails dt, #gallery_display.thumbnails dd, .thumbnails dt, .thumbnails dd {
   width: 120px;
   float: left; }
-.thumbnails dt {
+#gallery_display.thumbnails dt, .thumbnails dt {
   margin-bottom: 4em; }
-.thumbnails dd {
+#gallery_display.thumbnails dd, .thumbnails dd {
   text-align: center;
-  margin: 105px 0 0 -120px; }
-.thumbnails img {
+  margin: 120px 0 0 -120px; }
+#gallery_display.thumbnails img, .thumbnails img {
   vertical-align: bottom;
+  width: 110px;
+  height: 110px;
   border: 0; }
 
 section:first-child {

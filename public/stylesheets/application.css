@@ -404,6 +404,9 @@ ul.dropdown {
   height: 110px;
   border: 0; }
 
+.gallery_image img {
+  max-width: 100%; }
+
 section:first-child {
   margin-top: 10px; }
 

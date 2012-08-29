@@ -394,30 +394,26 @@ ul.dropdown {
   padding: 0;
   list-style: none; }
 
-#gallery_display.thumbnails ul, #gallery_display.thumbnails li, .thumbnails ul, .thumbnails li {
+.thumbnails ul, .thumbnails li {
   -webkit-padding-start: 0;
   margin: 0;
   padding: 0;
   list-style: none inside; }
-#gallery_display.thumbnails dl, .thumbnails dl {
+.thumbnails dl {
+  float: left;
   text-align: center;
   font-size: small; }
-#gallery_display.thumbnails dt, #gallery_display.thumbnails dd, .thumbnails dt, .thumbnails dd {
+.thumbnails dt, .thumbnails dd {
   width: 120px;
   float: left; }
-#gallery_display.thumbnails dt, .thumbnails dt {
+.thumbnails dt {
   margin-bottom: 4em; }
-#gallery_display.thumbnails dd, .thumbnails dd {
+.thumbnails dd {
   text-align: center;
-  margin: 120px 0 0 -120px; }
-#gallery_display.thumbnails img, .thumbnails img {
+  margin: 105px 0 0 -120px; }
+.thumbnails img {
   vertical-align: bottom;
-  width: 110px;
-  height: 110px;
   border: 0; }
-
-.gallery_image img {
-  max-width: 100%; }
 
 section:first-child {
   margin-top: 10px; }

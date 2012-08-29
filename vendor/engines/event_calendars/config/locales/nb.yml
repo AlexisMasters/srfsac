@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    event_calendars:
+      title: Event Calendars
+  admin:
+    event_calendars:
+      actions:
+        create_new: Lag en ny Event Calendar
+        reorder: Endre rekkefølgen på Event Calendars
+        reorder_done: Ferdig å endre rekkefølgen Event Calendars
+      records:
+        title: Event Calendars
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Event Calendars enda. Klikk på "Lag en ny Event Calendar" for å legge til din første event calendar.
+      event_calendar:
+        view_live_html: Vis hvordan denne event calendar ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne event calendar
+        delete: Fjern denne event calendar permanent
+  event_calendars:
+    show:
+      other: Andre Event Calendars

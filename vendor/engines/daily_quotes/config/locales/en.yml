@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    daily_quotes:
+      title: Daily Quotes
+  admin:
+    daily_quotes:
+      actions:
+        create_new: Add New Daily Quote
+        reorder: Reorder Daily Quotes
+        reorder_done: Done Reordering Daily Quotes
+      records:
+        title: Daily Quotes
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Daily Quotes yet. Click "Add New Daily Quote" to add your first daily quote.
+      daily_quote:
+        view_live_html: View this daily quote live <br/><em>(opens in a new window)</em>
+        edit: Edit this daily quote
+        delete: Remove this daily quote forever
+  daily_quotes:
+    show:
+      other: Other Daily Quotes

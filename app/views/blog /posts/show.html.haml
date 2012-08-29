@@ -3,7 +3,7 @@
     = render 'post'
   - if BlogPost.comments_allowed?
     %aside#comments
-      %h2= t('.comments.title')
+      %h1= t('.comments.title')
       - if (comments = @blog_post.comments.approved).any?
         = render :partial => "comment", :collection => comments
       - else
@@ -36,13 +36,6 @@
             = recaptcha_tags( :display => { :theme => 'clean', :tabindex => 0 } )  # :ssl => true if using SSL
             = submit_tag( 'send', :class => "submit modal-submit", :value => "send" )
 
-- content_for :body_content_right do
-  = render :partial => "/blog/shared/posts"
-  = render :partial => "/blog/shared/categories"
-  = render :partial => "/blog/shared/tags"
-  = blog_archive_list
-  = render :partial => "/blog/shared/rss_feed"
-  
 = render :partial => "/shared/content_page", :locals => { :remove_automatic_sections => true, :hide_sections => [:body_content_title] }
 
 - content_for :stylesheets, stylesheet_link_tag('refinerycms-blog')

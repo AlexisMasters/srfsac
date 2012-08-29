@@ -1,0 +1,213 @@
+- content_for :body_content_left do
+  #event-calendar
+    #toolbar.ui-widget-header.ui-corner-all{:style => "padding:3px; vertical-align: middle; white-space:nowrap; overflow: hidden;"}
+      %h1#current-month= Time.now.strftime("%B %Y")
+      &emsp;
+      %button#BtnPreviousMonth prev
+      %button#BtnNextMonth next
+      &emsp;
+      %p#load-status loading events; please wait &hellip;
+
+    #mycal
+
+  :javascript
+    /**
+     * Initializes calendar.
+     */
+    var jfcalplugin = $("#mycal").jFrontierCal({
+            date: new Date(),
+            dayClickCallback: myDayClickHandler,
+            agendaClickCallback: myAgendaClickHandler,
+            agendaDropCallback: myAgendaDropHandler,
+            // agendaMouseoverCallback: myAgendaMouseoverHandler,
+            applyAgendaTooltipCallback: myApplyTooltip,
+            agendaDragStartCallback : myAgendaDragStart,
+            agendaDragStopCallback : myAgendaDragStop,
+            dragAndDropEnabled: true
+    }).data("plugin");
+    
+    function myDayClickHandler(eventObj){
+            var date = eventObj.data.calDayDate;
+            // alert("You clicked day " + date.toDateString());
+    };
+    function myAgendaClickHandler (eventObj){
+            var agendaId = eventObj.data.agendaId;
+    };
+    function myAgendaDropHandler(eventObj){
+            var agendaId = eventObj.data.agendaId;
+            var date = eventObj.data.calDayDate;    
+            var agendaItem = jfcalplugin.getAgendaItemById("#mycal",agendaId);    
+            /**
+            * alert("You dropped agenda item " + agendaItem.title + 
+            *        " onto " + date.toString() + ". Here is where you can make an AJAX call to update your database.");
+            */
+    };  
+    
+    /**
+     * Do something when dragging starts on agenda div
+     */
+    function myAgendaDragStart(eventObj,divElm,agendaItem){
+            // destroy our qtip tooltip
+            if(divElm.data("qtip")){
+                    divElm.qtip("destroy");
+            }  
+    };
+
+    /**
+     * Do something when dragging stops on agenda div
+     */
+    function myAgendaDragStop(eventObj,divElm,agendaItem){
+            //alert("drag stop");
+    };
+
+    var month=new Array();
+    month[0]="January";
+    month[1]="February";
+    month[2]="March";
+    month[3]="April";
+    month[4]="May";
+    month[5]="June";
+    month[6]="July";
+    month[7]="August";
+    month[8]="September";
+    month[9]="October";
+    month[10]="November";
+    month[11]="December";
+
+    function fullMonth(date) {
+      return month[ date.getMonth()];
+    };
+
+
+
+    function prettyTime(date) {
+      if(date == null){
+        return "";
+      }
+      
+      var c = ":";
+      var h = date.getHours();
+      var m = date.getMinutes();
+      var ampm = "am";
+
+      if(m == 0){
+        // don't show minutes if on the hour
+        m = "";
+        c = "";
+      }else if(m < 10){
+        m = "0" + m;
+      }
+      // covert 24-hour to 12-hour with am/pm
+      if(h == 0){
+        h = 12;
+      }else if(h > 12){
+        h = h-12;
+        ampm = "pm"
+      }else if(h == 12){
+        ampm = "pm"
+      }
+      return h + c + m + ampm;
+    };
+
+    /**
+     * Custom tooltip - use any tooltip library you want to display the agenda data.
+     *
+     * For this example we use qTip - http://craigsworks.com/projects/qtip/
+     *
+     * @param divElm - jquery object for agenda div element
+     * @param agendaItem - javascript object containing agenda data.
+     */
+    function myApplyTooltip(divElm,agendaItem){
+
+            // Destroy currrent tooltip if present
+            if(divElm.data("qtip")){
+                    divElm.qtip("destroy");
+            }
+            
+            var displayData = "";
+            
+            var title = agendaItem.title;
+            var startDate = agendaItem.startDate;
+            var endDate = agendaItem.endDate;
+            var allDay = agendaItem.allDay;
+            var data = agendaItem.data;
+            displayData += "<br><b>" + title+ "</b><br><br>";
+            if(allDay){
+                    displayData += "(All day event)<br><br>";
+            }else{
+                    displayData += "<b>Date:</b> "   + startDate.toDateString()  + "<br>";
+                    displayData += "<b>Starts:</b> " + prettyTime(startDate) + "<br>" + "<b>Ends:</b> " + prettyTime(endDate) + "<br><br>";
+            }
+            displayData += "<b>Detail:</b> "      + data["DESCRIPTION"].replace(/\\n/g,", ")   + "<br>";
+            displayData += "<b>Location:</b> "    + data["LOCATION"].replace(/\\,/g,", ")      + "<br>";
+            displayData += "<b>URL:</b> "         + data["URL"]                              + "<br>";
+
+            /**
+             * for (var propertyName in data) {
+             *       displayData += "<b>" + propertyName + ":</b> " + data[propertyName] + "<br>"
+             *}
+             */
+
+            // apply tooltip
+            divElm.qtip({
+                    content: displayData,
+                    position: {
+                            corner: {
+                                    tooltip: "bottomMiddle",
+                                    target: "topMiddle"      
+                            },
+                            adjust: { 
+                                    mouse: true,
+                                    x: 0,
+                                    y: -15
+                            },
+                            target: "mouse"
+                    },
+                    show: { 
+                            when: { 
+                                    event: 'mouseover'
+                            }
+                    },
+                    style: {
+                            border: {
+                                    width: 1,
+                                    radius: 5
+                            },
+                            padding: 5, 
+                            textAlign: "left",
+                            tip: true,
+                            name: "dark"
+                    }
+            });
+
+       };
+
+     /**
+     * Initialize previous month button
+     */
+    $("#BtnPreviousMonth").button();
+    $("#BtnPreviousMonth").click(function() {
+      $("#load-status").show();
+      jfcalplugin.showPreviousMonth("#mycal");
+      var calDate = jfcalplugin.getCurrentDate("#mycal"); // returns Date object
+      $("#current-month").text( fullMonth(calDate)  + " " + calDate.getFullYear() );
+      $("#load-status").hide();
+      return false;
+    });
+
+    /**
+     * Initialize next month button
+     */
+    $("#BtnNextMonth").button();
+    $("#BtnNextMonth").click(function() {
+      $("#load-status").show();
+      jfcalplugin.showNextMonth("#mycal");
+      var calDate = jfcalplugin.getCurrentDate("#mycal"); // returns Date object
+      $("#current-month").text( fullMonth(calDate)  + " " + calDate.getFullYear() );
+      $("#load-status").hide();
+      return false;
+    });
+
+    jfcalplugin.loadICalSource("#mycal","#{get_events_event_calendars_path}","html"); 
+
+= render :partial => "/shared/content_page"

@@ -19,6 +19,11 @@
 - hide_sections ||= []
 - hide_sections << :body_content_title if RefinerySetting.get(:gardenia_disable_repeat_title)
 
+- if @page.present? && @page.parts.any?{|p| p.title == 'Daily Quotes' }
+  - content_for('Daily Quotes'.to_sym) do
+    #dailyquote 
+      = render(:partial => "/daily_quotes/quote_blurb", :object => DailyQuote.todays_quote.first)
+
 - if @page.present? && @page.parts.any?{|p| p.title == 'Recent Posts' }
   - content_for('Recent Posts'.to_sym) do
     - @blog_posts = BlogPost.recent_top

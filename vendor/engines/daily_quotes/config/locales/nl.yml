@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    daily_quotes:
+      title: Daily Quotes
+  admin:
+    daily_quotes:
+      actions:
+        create_new: Maak een nieuwe Daily Quote
+        reorder: Wijzig de volgorde van de Daily Quotes
+        reorder_done: Klaar met het wijzingen van de volgorde van de Daily Quotes
+      records:
+        title: Daily Quotes
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Daily Quotes. Druk op 'Maak een nieuwe Daily Quote' om de eerste aan te maken.
+      daily_quote:
+        view_live_html: Bekijk deze daily quote op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze daily quote
+        delete: Verwijder deze daily quote voor eeuwig
+  daily_quotes:
+    show:
+      other: Andere Daily Quotes

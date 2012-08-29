@@ -1,0 +1,13 @@
+<nav id="recent_news_items">
+  <br />
+  <br />
+  <br />
+  <ul>
+    <% @news_items.each do |item| %>
+      <li>
+        <%= link_to truncate(item.title, :length => 30), news_item_url(item) %>
+
+      </li>
+    <% end %>
+  </ul>
+</nav>

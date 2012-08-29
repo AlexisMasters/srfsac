@@ -11,7 +11,7 @@ class CreateCampaigns < ActiveRecord::Migration
 
     add_index :campaigns, :id
 
-    #   load(Rails.root.join('db', 'seeds', 'campaigns.rb'))
+    # load(Rails.root.join('db', 'seeds', 'campaigns.rb'))
   end
 
   def self.down

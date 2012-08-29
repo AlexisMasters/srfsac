@@ -1,0 +1,14 @@
+- unless quote_blurb.nil?
+  .quote-top.clearfix
+    &nbsp;
+  .quote-middle.clearfix
+    %h3.theme= quote_blurb.theme
+    .quote
+      #{raw(quote_blurb.quote)}
+    %p.author
+      &mdash;
+      = quote_blurb.author
+    %p.source= quote_blurb.source
+  .quote-bottom.clearfix
+    &nbsp;
+  

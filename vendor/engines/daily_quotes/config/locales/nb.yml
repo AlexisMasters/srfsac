@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    daily_quotes:
+      title: Daily Quotes
+  admin:
+    daily_quotes:
+      actions:
+        create_new: Lag en ny Daily Quote
+        reorder: Endre rekkefølgen på Daily Quotes
+        reorder_done: Ferdig å endre rekkefølgen Daily Quotes
+      records:
+        title: Daily Quotes
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Daily Quotes enda. Klikk på "Lag en ny Daily Quote" for å legge til din første daily quote.
+      daily_quote:
+        view_live_html: Vis hvordan denne daily quote ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne daily quote
+        delete: Fjern denne daily quote permanent
+  daily_quotes:
+    show:
+      other: Andre Daily Quotes

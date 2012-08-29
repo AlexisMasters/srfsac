@@ -1,0 +1,36 @@
+<% content_for :body_content_title do %>
+  <%= @gallery_entry.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+
+  <div id='gallery_display_item'>
+	<% if @gallery_entry.video? -%>
+    	<%= raw( sanitize( @gallery_entry.body ) ) %>
+	<% else -%>
+		<%= @gallery_entry.body.html_safe  %>
+	<% end -%>
+  </div>
+
+<% unless @gallery_entry.video? -%>
+  <div class='gallery_image'>
+    <%= image_fu @gallery_entry.image, nil %>
+  </div>
+<% end -%>
+
+<% end %>
+
+<% content_for :body_content_right do %>
+  <h2><%= t('.other') %></h2>
+  <ul id="galleries">
+    <% @galleries.each do |gallery| %>
+      <li>
+        <%= link_to gallery.name, gallery_url(gallery) %>
+      </li>
+    <% end %>
+  </ul>
+
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
+

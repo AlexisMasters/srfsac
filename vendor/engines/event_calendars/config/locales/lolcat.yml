@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    event_calendars:
+      title: Event Calendars
+  admin:
+    event_calendars:
+      actions:
+        create_new: CREATE NEW Event Calendar
+        reorder: REORDR Event Calendars
+        reorder_done: DUN REORDERIN Event Calendars
+      records:
+        title: Event Calendars
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Event Calendars YET. CLICK "CREATE NEW Event Calendar" 2 ADD UR FURST event calendar.
+      event_calendar:
+        view_live_html: VIEW DIS event calendar LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS event calendar
+        delete: REMOOV DIS event calendar FOREVR
+  event_calendars:
+    show:
+      other: OTHR Event Calendars

@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    daily_quotes:
+      title: Daily Quotes
+  admin:
+    daily_quotes:
+      actions:
+        create_new: CREATE NEW Daily Quote
+        reorder: REORDR Daily Quotes
+        reorder_done: DUN REORDERIN Daily Quotes
+      records:
+        title: Daily Quotes
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Daily Quotes YET. CLICK "CREATE NEW Daily Quote" 2 ADD UR FURST daily quote.
+      daily_quote:
+        view_live_html: VIEW DIS daily quote LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS daily quote
+        delete: REMOOV DIS daily quote FOREVR
+  daily_quotes:
+    show:
+      other: OTHR Daily Quotes

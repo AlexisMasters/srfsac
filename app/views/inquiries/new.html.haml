@@ -1,4 +1,5 @@
 - content_for :body_content_left do
+  = raw @page[Page.default_parts.first.to_sym]
   .inquiries
 
     .modal-form.basic-form
@@ -26,5 +27,4 @@
           -# .actions
             = f.submit t('.send')
 
-  = raw @page[Page.default_parts.first.to_sym]
 = render :partial => "/shared/content_page"

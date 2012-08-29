@@ -1,0 +1,27 @@
+<% content_for :body_content_title do %>
+  Daily Quote
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <p>
+      <%=raw @daily_quote.month %>/<%=raw @daily_quote.day %>
+    </p>
+  </section>
+  <section>
+    <p>
+      Theme:  <%=raw @daily_quote.theme %>
+      <br/>
+      Author: <%=raw @daily_quote.author %>
+      <br/>
+      Source: <%=raw @daily_quote.source %>
+    </p>
+  </section>
+  <section>
+    <p>
+      <%=raw @daily_quote.quote %>
+    </p>
+  </section>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

@@ -9,10 +9,8 @@
       &emsp;
       |
       &emsp;
-      = t('.copyright', :year => Time.now.year, :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")).html_safe
+      = t('.copyright', :year => Time.now.year, :site_name => "Self-Realization Fellowship")
       &emsp;
       |
       &emsp;
-      = link_to( "Design by Alexis", 'http://theauthorshop.com/' , :title => "Learn more about Design by Alexis") 
-      -#= link_to( image_tag("tas_bigger-35.png", :alt => "Design by Alexis logo"), 'http://theauthorshop.com/' , :title => "Learn more about Designs by Alexis") 
       v#{RefinerySetting.get(:gardenia_version)}

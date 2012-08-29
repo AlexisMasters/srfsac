@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="daily_quotes">
+    <% @daily_quotes.each do |daily_quote| %>
+      <li>
+        <%= link_to raw( daily_quote.to_s ), daily_quote_path(daily_quote) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    event_calendars:
+      title: Event Calendars
+  admin:
+    event_calendars:
+      actions:
+        create_new: Maak een nieuwe Event Calendar
+        reorder: Wijzig de volgorde van de Event Calendars
+        reorder_done: Klaar met het wijzingen van de volgorde van de Event Calendars
+      records:
+        title: Event Calendars
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Event Calendars. Druk op 'Maak een nieuwe Event Calendar' om de eerste aan te maken.
+      event_calendar:
+        view_live_html: Bekijk deze event calendar op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze event calendar
+        delete: Verwijder deze event calendar voor eeuwig
+  event_calendars:
+    show:
+      other: Andere Event Calendars

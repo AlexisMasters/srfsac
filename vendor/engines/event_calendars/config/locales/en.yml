@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    event_calendars:
+      title: Event Calendars
+  admin:
+    event_calendars:
+      actions:
+        create_new: Add New Event Calendar
+        reorder: Reorder Event Calendars
+        reorder_done: Done Reordering Event Calendars
+      records:
+        title: Event Calendars
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Event Calendars yet. Click "Add New Event Calendar" to add your first event calendar.
+      event_calendar:
+        view_live_html: View this event calendar live <br/><em>(opens in a new window)</em>
+        edit: Edit this event calendar
+        delete: Remove this event calendar forever
+  event_calendars:
+    show:
+      other: Other Event Calendars

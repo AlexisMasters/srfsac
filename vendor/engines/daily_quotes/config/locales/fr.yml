@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    daily_quotes:
+      title: Daily Quotes
+  admin:
+    daily_quotes:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Daily Quote
+        reorder: Réordonner les Daily Quotes
+        reorder_done: Fin de réordonnancement des Daily Quotes
+      records:
+        title: Daily Quotes
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Daily Quote. Cliquer sur "Créer un(e) nouve(au/l/lle) Daily Quote" pour créer votre premi(er/ère) daily quote.'
+      daily_quote:
+        view_live_html: Voir ce(t/tte) daily quote <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) daily quote
+        delete: Supprimer définitivement ce(t/tte) daily quote
+  daily_quotes:
+    show:
+      other: Autres Daily Quotes

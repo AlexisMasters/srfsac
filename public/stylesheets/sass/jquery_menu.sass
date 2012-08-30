@@ -1,5 +1,5 @@
 /**
- *   Horizontal CSS Drop-Down Menu Module
+ *   SRFSac Horizontal CSS Drop-Down Menu Module
  *   MTV.com CSS Drop-Down Menu Theme
  *   MTV.com Ultimate Linear CSS Drop-Down Menu Theme
  *  
@@ -18,15 +18,15 @@
  *  
  **
 
-$FG_TEXT:    #D2B48C        // how foreground looks w/o any cursor effects
-$HV_FOREGROUND:  #FFF8DC     // how foreground will light up on cursor hover
-$LINK_ACTIVE: #B2C3DD     // link color during click select
+$FG_TEXT:    #FFE4B5        // how foreground looks w/o any cursor effects
+$HV_FOREGROUND:  #000080     // how foreground will light up on cursor hover
+$LINK_ACTIVE: #0000CD     // link color during click select
  
-$HV_BACKGROUND:  #036  // how background will light up on cursor hover
-$HV_BACKGROUND_2:  #036  // how background will light up on cursor hover
-$HV_BACKGROUND_3:  #036  // 2d level dropdown 
-$HV_BACKGROUND_4:  #036  // 3d level dropdown 
-$HV_BACKGROUND_5:  #036  // 4th level dropdown
+$HV_BACKGROUND:  #FFFACD // how background will light up on cursor hover
+$HV_BACKGROUND_2:  #FFFACD  // how background will light up on cursor hover
+$HV_BACKGROUND_3:  #FFFACD  // 2d level dropdown 
+$HV_BACKGROUND_4:  #FFFACD  // 3d level dropdown 
+$HV_BACKGROUND_5:  #FFFACD  // 4th level dropdown
 
 $DROPDOWN_BORDER_LT_1:  #505050
 $DROPDOWN_BORDER_LT_2:  #404040
@@ -35,15 +35,15 @@ $DROPDOWN_BORDER_LT_4:  #4a4a4a
 $DROPDOWN_BORDER_LT_5:  #767676
 $DROPDOWN_BORDER_LT_6:  #113  // this is the highlight border on cursor hover
   
-$DROPDOWN_BORDER_DK_1:  #1a1a1a
-$DROPDOWN_BORDER_DK_2:  #242424
+$DROPDOWN_BORDER_DK_1:  #191970
+$DROPDOWN_BORDER_DK_2:  #191970
   
 
 ul
   &.dropdown
-    font-size: 0.85em
+    font-size: 1.1em
     letter-spacing: 0.1em
-    list-style: none
+    list-style: none5
     margin: 0
     padding: 0
     position: relative
@@ -63,14 +63,13 @@ ul
     
     li              // this selects all uppermost li (main tabs) themselves
       float: left
-      line-height: 1.2em
-      text-transform: uppercase
+      line-height: 1.5em
       letter-spacing: 0.2em
-      font-size: 1em
+      font-size: 0.90em
       vertical-align: middle
       zoom: 1
       padding: 0
-      background-color: #036
+      +GRADIENT_BAR_BOX(#000080, #00008B, #000080)
       color: $FG_TEXT
       
       &.hover, &:hover
@@ -198,8 +197,10 @@ ul
         
     a, span
       display: block
-      padding: 7px 7px
+      padding: 7px 12px
+
 
     *.dir
       /* POI
-      padding: 7px 7px
+      padding: 7px 12px
+

@@ -1,16 +1,16 @@
 
 // ---------------------------------------------------------------------
-// Temple standard color & other variables
+// SRFSAC standard color & other variables
 // ---------------------------------------------------------------------
 
 // *****************************************************************************
 // *****************************************************************************
 
 $BASIC_FG: #333
-$BASIC_BG: #B2C3DD
-$BASIC_NEUTRAL: #B2C3DD
+$BASIC_BG: #FFF
+$BASIC_NEUTRAL: #0000CD
   
-$PRIMARY_DARK_COLOR: #036
+$PRIMARY_DARK_COLOR: #000080
 
 $BG_HEADER: $PRIMARY_DARK_COLOR
 $FG_HEADER: #DEB887
@@ -19,39 +19,38 @@ $BG_NAV: $PRIMARY_DARK_COLOR   //  #DBD19E
 $FG_NAV: #DEB887
 $HV_NAV: #036
 
-$BG_FOOTER: #036
+$BG_FOOTER: $BASIC_NEUTRAL
 $FG_FOOTER: #D2B48C  // $PRIMARY_DARK_COLOR
 
-$BG_MAINPAGE: #FFEFD5 //  #FCEFC1
+$BG_MAINPAGE: $BASIC_BG
 $FG_MAINPAGE: $BASIC_FG
-$FG_TITLES: #036 
+$FG_TITLES: $BASIC_NEUTRAL // $PRIMARY_DARK_COLOR
 
 $BG_SIDEBAR: #F0FFF0
 $FG_SIDEBAR: $BASIC_FG
 
-$HEADER_LT: $PRIMARY_DARK_COLOR  // #DDD068
-$HEADER_DK: $PRIMARY_DARK_COLOR  //  #B5A947
-
-$FG_MENU: #066
-$BG_MENU: $BASIC_BG
-$HV_MENU: #F0FFF0 //  #d8d8d8
+$HEADER_LT: $BASIC_NEUTRAL   
+$HEADER_DK: $PRIMARY_DARK_COLOR  
+$FG_MENU: #FFE4B5
+$BG_MENU: $BASIC_NEUTRAL
+$HV_MENU: #FFFFCC
 
 $FG_FORMCAPTION:  $PRIMARY_DARK_COLOR
-$BG_INPUTFORM:    #F8F8FF // #E2F1FC
+$BG_INPUTFORM:    #FFF8DC 
 $FG_INPUTLABEL:   $PRIMARY_DARK_COLOR
-$FG_INPUTBOX:     #DCDCDC
+$FG_INPUTBOX:     #FFDEAD
 $BG_INPUTBOX:     $BG_HEADER
-$HV_INPUTFORM:    #FDF5E6
-$FG_SUBMIT:       #DEB887
+$HV_INPUTFORM:    #F0F8FF
+$FG_SUBMIT:       #FFE4B5
 $FG_BASICFORM_P:  $BG_HEADER
   
 $BG_FORM_SUBMIT:  $PRIMARY_DARK_COLOR
-$FG_FORM_SUBMIT:  $BASIC_BG
+$FG_FORM_SUBMIT:  #FFE4B5
 
 $FG_INPUTLABEL_DARK: #485751
   
 $FG_ANCHOR_LINK:    #036
-$FG_ANCHOR_VISITED: #191970
+$FG_ANCHOR_VISITED: #666
 $HV_ANCHOR_LINK:    #000
 $BG_ANCHOR_HOVER:   #F0F8FF
 // *****************************************************************************
@@ -66,9 +65,9 @@ $VIEWPORT_HEIGHT: 768px
 $INNER_MARGIN: 0px
 $INNER_CONTENT_AREAS_WIDTH: $VIEWPORT_WIDTH - $INNER_MARGIN - $INNER_MARGIN
 
-$MASTHEAD_HEIGHT: 170px
+$MASTHEAD_HEIGHT: 193px
 $MASTHEAD_PHANTOM_HEIGHT:10px    // >0 reveals background image
-$NAV_HEIGHT: 29px
+$NAV_HEIGHT: 35px
 
 $HEADER_HEIGHT: $MASTHEAD_HEIGHT + $NAV_HEIGHT
 
@@ -96,7 +95,7 @@ $MAIN_TITLE_WIDTH: $MAIN_CONTENT_INNER_WIDTH
 
 $MAIN_CONTENT_HEIGHT: $VIEWPORT_HEIGHT - $MASTHEAD_PHANTOM_HEIGHT - $HEADER_HEIGHT
 
-$INQUIRY_TEXT_WIDTH:  475px
+$INQUIRY_TEXT_WIDTH:  525px
 
 // *****************************************************************************
 // *****************************************************************************
@@ -106,8 +105,9 @@ $FONT_SIZE_NOMINAL_EM: 13px    // this determines what 1em is: ok to use %
 
 // reference Hx used in main content area; sidebar sets the Hx to one size lower 
 // main h1 $FONT_SIZE_REF_H1, sidebar h1 $FONT_SIZE_REF_H2, etc
+4
 $FONT_SIZE_REF_H1: 1.6em       // main content reference size for h1
-$FONT_SIZE_ALT_H1: 1.6em       // main content alternate size for h1
+$FONT_SIZE_ALT_H1: 1.4em       // main content alternate size for h1
 $FONT_SIZE_REF_H2: 1.3em       // main content reference size for h2
 $FONT_SIZE_REF_H3: 1.1em       // main content reference size for h3
 $FONT_SIZE_REF_H4: 1.0em       // main content reference size for h4
@@ -148,7 +148,7 @@ $NAV_TAB_BEVEL: 0px    // radius curvature for menu tab areas
 // *****************************************************************************
 
 body, input, textarea, select, p, li, blockquote
-  font-family: Geneva, Arial, Helvetica, sans-serif
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif
   font-size: 13px
 
 ul, li
@@ -163,14 +163,13 @@ p
 
 h1, h2, h3, h4
   color: $FG_TITLES
-  font-family: Trajan Pro, Times Roman, Baskerville, Georgia, serif
+  font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, Baskerville, Georgia, serif
   letter-spacing: 0.1em
   font-weight: lighter
 h1
-  font-size: 1.6em
+  font-size: 1.8
 h2
-  font-size: 1.2em
-  margin-bottom: 0.15em
+  font-size: 1.4em
 h3
   font-size: 1.2em
    
@@ -191,7 +190,7 @@ a
 body
   margin: 0px
   padding: 0px
-  background: $BASIC_BG  url("../images/body_background.png") repeat
+  background: #FAFAD2  url("../images/body_background.png") repeat
 
 #page_container
   width: 100%
@@ -205,17 +204,19 @@ body
   padding: 0px
   margin: 0px auto
   margin-top: 24px
-  border: 7px solid #B2C3DD
+  border: 3px solid #FFDAB9
 
 #body, #masthead, #header_content, #footer_content, #site_bar_content
   width: $INNER_CONTENT_AREAS_WIDTH
   margin: 0px auto
 
 #body_content
-  background: #FFFFFF  url("../images/body_content_bkg.gif") repeat
+  background: #FFFFFF
   min-height: $MAIN_CONTENT_HEIGHT
   padding: $STANDARD_PADDING 0
-  
+  border-left: 4px solid #000080
+  border-right: 4px solid #000080
+
 //******************************************************************************
 // NOTE: DO NOT SPECIFY float: xxxx for main_content, sidebar_content, body_content_title
 // it is dynamically set in shared/content_page.html.haml based on refinery settings
@@ -252,12 +253,9 @@ body
 #footer
   height: $FOOTER_HEIGHT
   line-height: 2.6em
-  background: $BG_FOOTER   url("../images/footer_background.png") repeat-x
-  border-left: 1px solid $PRIMARY_DARK_COLOR
-  border-right: 1px solid $PRIMARY_DARK_COLOR
-  
+  +GRADIENT_BAR_BOX(#000080, #00008B, #000080)  
 #footer_inner_content
-  color: #D2B48C
+  color: #FFE4B5
   font-size: 0.70em
   letter-spacing: 0.1em
 
@@ -266,32 +264,28 @@ body
     text-align: left
 
     a:link
-      color: #D2B48C
+      color: #FFE4B5
 
     a:hover
-      color: #FFF
+      color: #FFCC00
       background-color: #036
 
     a:visited
-      color: #D2B48C
+      color: #FFE4B5
       background-color: #036
 // *****************************************************************************
 // *****************************************************************************
 
 #header
   margin-top: 0px
-#header_content
-  height: $NAV_HEIGHT
-  +GRADIENT_BAR_BOX($PRIMARY_DARK_COLOR, $PRIMARY_DARK_COLOR, $PRIMARY_DARK_COLOR)
-
+  #header_content
+    height: $NAV_HEIGHT
+    +GRADIENT_BAR_BOX(#000080, #00008B, #000080)
+    border-top: 1px solid #505050
+ 
 #masthead
   height: $MASTHEAD_HEIGHT
-  background: #FFF  url("../images/masthead.png") no-repeat
-  a:hover
-    background: transparent
-    border: 0
-  img
-    border: 0
+  background: #FFF  url("../images/masthead.jpg") no-repeat
 
 #nav_search_box
   float: right
@@ -467,7 +461,7 @@ article
   margin-top: 10px
 
   header
-    margin-bottom: 1.5em
+    margin-bottom: $STANDARD_PADDING / 2
     padding: 0
     border-bottom: 1px solid #bbb
     
@@ -626,8 +620,8 @@ input
     margin-left: 60px
     margin-top: 10px
     padding: 5px 15px
-    color:       #D2B48C
-    background-color: $PRIMARY_DARK_COLOR 
+    color:       #FFE4B5
+    background-color: $PRIMARY_DARK_COLOR
     border:     2px solid $FG_INPUTBOX
     +BEVEL_CORNER(10px)
 
@@ -635,7 +629,7 @@ input
     margin-left: 80px
     margin-top: 10px
     padding: 5px 15px
-    color:       #D2B48C
+    color:       #FFE4B5
     background-color: $PRIMARY_DARK_COLOR 
     border:     1px solid $FG_INPUTBOX
     +BEVEL_CORNER(10px)
@@ -645,8 +639,8 @@ input
     margin-right: 0px
 
   &.submit:hover
-    color:       #FFF
-    background:  #B2C3DD
+    color:       #FFEFD5
+    background:  $BASIC_NEUTRAL
 
 input[type="hidden"]
   display: none
@@ -714,40 +708,12 @@ img.image-align-right
     line-height: 1.6em  
     list-style: outside
 
-#event-calendar
-
-  h1
-    margin: 0
-    padding: 0 0 0.5em 0
-    display: inline
-    text-transform: uppercase
-    font-weight: bold
-    font-family: Verdana, sans-serif
-    text-transform: uppercase
-    letter-spacing: 0
-    color: #000000
-  p
-    margin: 0
-    padding: 0 0 0.5em 0
-    display: inline
-    font-style: italic
-
 #billboard
-  background: url("../images/billboard.png") no-repeat
+  background: url("../images/upcomingevents.png") no-repeat
   height: 210px
   padding-top: 60px
   padding-left:  35px
   padding-right: 32px
-  font-size: 0.85em
-
-#billboard2
-  background: url("../images/box2.png") no-repeat
-  height: 210px
-  padding-top: 43px
-  padding-left:  33px
-  padding-right: 32px
-  line-height: 1.8em
-
 
   p
     font-size: 0.95em

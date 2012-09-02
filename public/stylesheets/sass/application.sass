@@ -10,7 +10,7 @@ $BASIC_FG: #333
 $BASIC_BG: #FFF
 $BASIC_NEUTRAL: #0000CD
   
-$PRIMARY_DARK_COLOR: #000080
+$PRIMARY_DARK_COLOR: #00008B
 
 $BG_HEADER: $PRIMARY_DARK_COLOR
 $FG_HEADER: #DEB887
@@ -149,7 +149,7 @@ $NAV_TAB_BEVEL: 0px    // radius curvature for menu tab areas
 
 body, input, textarea, select, p, li, blockquote
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif
-  font-size: 13px
+  font-size: 14px
 
 ul, li
   -webkit-padding-start: 0
@@ -163,15 +163,18 @@ p
 
 h1, h2, h3, h4
   color: $FG_TITLES
-  font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, Baskerville, Georgia, serif
+  font-family: Georgia, 'Book Antiqua', 'Palatino Linotype', Palatino, Baskerville, serif
   letter-spacing: 0.1em
   font-weight: lighter
+
 h1
-  font-size: 1.8
+  font-size: 1.9em
+
 h2
-  font-size: 1.4em
+  font-size: 1.5em
+
 h3
-  font-size: 1.2em
+  font-size: 1.3em
    
 a
   color: $FG_ANCHOR_LINK
@@ -214,8 +217,8 @@ body
   background: #FFFFFF
   min-height: $MAIN_CONTENT_HEIGHT
   padding: $STANDARD_PADDING 0
-  border-left: 4px solid #000080
-  border-right: 4px solid #000080
+  border-left: 4px solid #00008B
+  border-right: 4px solid #00008B
 
 //******************************************************************************
 // NOTE: DO NOT SPECIFY float: xxxx for main_content, sidebar_content, body_content_title
@@ -253,7 +256,7 @@ body
 #footer
   height: $FOOTER_HEIGHT
   line-height: 2.6em
-  +GRADIENT_BAR_BOX(#000080, #00008B, #000080)  
+  +GRADIENT_BOX(#003399, #00008B) 
 #footer_inner_content
   color: #FFE4B5
   font-size: 0.70em
@@ -280,17 +283,12 @@ body
   margin-top: 0px
   #header_content
     height: $NAV_HEIGHT
-    +GRADIENT_BAR_BOX(#000080, #00008B, #000080)
+    +GRADIENT_BOX(#003399, #00008B)
     border-top: 1px solid #505050
  
 #masthead
   height: $MASTHEAD_HEIGHT
   background: #FFF  url("../images/masthead.jpg") no-repeat
-  a:hover
-    background: transparent
-    border: 0
-  img
-    border: 0
 
 #nav_search_box
   float: right
@@ -626,7 +624,7 @@ input
     margin-top: 10px
     padding: 5px 15px
     color:       #FFE4B5
-    background-color: $PRIMARY_DARK_COLOR
+    +GRADIENT_BOX(#003399, #00008B)
     border:     2px solid $FG_INPUTBOX
     +BEVEL_CORNER(10px)
 
@@ -635,7 +633,7 @@ input
     margin-top: 10px
     padding: 5px 15px
     color:       #FFE4B5
-    background-color: $PRIMARY_DARK_COLOR 
+    +GRADIENT_BOX(#003399, #00008B)
     border:     1px solid $FG_INPUTBOX
     +BEVEL_CORNER(10px)
 
@@ -668,8 +666,13 @@ input[type="hidden"]
 
 .sidebar_box
   line-height: 1.6em
-  h2
-    text-align: center  
+ 
+  h2, h3
+    text-align: center 
+    font-size: 1.3em
+    padding: 5px
+    +GRADIENT_BOX(#FFEFD5, #FFFACD) 
+ 
   ul
     margin-bottom: 1.6em
   li
@@ -691,7 +694,12 @@ img.image-align-right
 // *****************************************************************************
 // *****************************************************************************
 
-#body_content_right 
+#body_content_right
+  h2, h3
+    text-align: center 
+    font-size: 1.3em
+    padding: 5px
+    +GRADIENT_BOX(#FFEFD5, #FFFACD)  
   p
     line-height: 1.4
     font-size: 0.90em
@@ -714,11 +722,6 @@ img.image-align-right
     list-style: outside
 
 #billboard
-  background: url("../images/upcomingevents.png") no-repeat
-  height: 210px
-  padding-top: 60px
-  padding-left:  35px
-  padding-right: 32px
 
   p
     font-size: 0.95em
@@ -729,39 +732,13 @@ img.image-align-right
 
   img.image-align-left
     float: left
-    padding-top: 10px
-    padding-bottom: 10px
-    padding-right: 10px
+    padding-top: 10px    padding-bottom: 10px    padding-right: 10px
 
   img.image-align-right
     float: right
-    padding-top: 10px
-    padding-bottom: 10px
-    padding-left: 10px
+    padding-top: 10px    padding-bottom: 10px    padding-left: 10px
 
-#signup
-  background: url("../images/signup.png") no-repeat
-  padding-top: 60px
-  padding-left: 35px
-  padding-right: 35px
-  font-size: 0.80em
-  height:  190px
-
-#signup2
-  background: url("../images/signup2.png") no-repeat
-  padding-top: 60px
-  padding-left: 35px
-  padding-right: 35px
-  font-size: 0.80em
-  height:  190px
-  p
-    font-size: 0.95em
 #recent_news
-  background: url("../images/newsholder.png") no-repeat
-  padding-left: 35px
-  padding-right: 35px
-  margin-bottom: 20px
-  height: 190px
 
 // *****************************************************************************
 // page-image formatting here
@@ -785,8 +762,16 @@ img.image-align-right
   width: 250px
   font-family: Georgia, Palatino, serif
   
+  .quote-top
+    background: url("../images/sdiary_top.png") no-repeat
+    min-height: 36px
+  
+  .quote-middle
+    margin 0 auto
+    background: url("../images/sdiary_mid.png") repeat
+  
   .quote-bottom
-    min-height: 90px
+    min-height: 37px
     background: url("../images/sdiary_bot.png") no-repeat
     margin-bottom: 20px
 

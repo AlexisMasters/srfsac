@@ -1,6 +1,6 @@
 body, input, textarea, select, p, li, blockquote {
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-  font-size: 13px; }
+  font-size: 14px; }
 
 ul, li {
   -webkit-padding-start: 0;
@@ -14,18 +14,18 @@ p {
 
 h1, h2, h3, h4 {
   color: #0000cd;
-  font-family: "Book Antiqua", "Palatino Linotype", Palatino, Baskerville, Georgia, serif;
+  font-family: Georgia, "Book Antiqua", "Palatino Linotype", Palatino, Baskerville, serif;
   letter-spacing: 0.1em;
   font-weight: lighter; }
 
 h1 {
-  font-size: 1.8; }
+  font-size: 1.9em; }
 
 h2 {
-  font-size: 1.4em; }
+  font-size: 1.5em; }
 
 h3 {
-  font-size: 1.2em; }
+  font-size: 1.3em; }
 
 a {
   color: #003366;
@@ -62,8 +62,8 @@ body {
   background: white;
   min-height: 530px;
   padding: 30px 0;
-  border-left: 4px solid navy;
-  border-right: 4px solid navy; }
+  border-left: 4px solid #00008b;
+  border-right: 4px solid #00008b; }
 
 #main_content {
   width: 675px;
@@ -92,8 +92,8 @@ body {
 #footer {
   height: 45px;
   line-height: 2.6em;
-  background-image: -moz-linear-gradient(bottom, navy, navy, #00008b, navy );
-  background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, navy), color-stop(0.3, navy), color-stop(0.6, #00008b), color-stop(1, navy)  ); }
+  background-image: -moz-linear-gradient(bottom, #003399, #00008b, #003399 );
+  background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #003399), color-stop(0.4, #00008b), color-stop(1, #003399)  ); }
 
 #footer_inner_content {
   color: #ffe4b5;
@@ -115,8 +115,8 @@ body {
   margin-top: 0px; }
   #header #header_content {
     height: 35px;
-    background-image: -moz-linear-gradient(bottom, navy, navy, #00008b, navy );
-    background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, navy), color-stop(0.3, navy), color-stop(0.6, #00008b), color-stop(1, navy)  );
+    background-image: -moz-linear-gradient(bottom, #003399, #00008b, #003399 );
+    background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #003399), color-stop(0.4, #00008b), color-stop(1, #003399)  );
     border-top: 1px solid #505050; }
 
 #masthead {
@@ -166,7 +166,7 @@ body {
   font-weight: normal;
   font-size: 0.85em;
   letter-spacing: 0.1em;
-  border-right: 1px solid navy; }
+  border-right: 1px solid #00008b; }
 #refinery_menu li.selected a, #refinery_menu li:hover a, #refinery_menu li a:hover, #refinery_menu li ul li a:hover {
   color: #ffe4b5;
   background: #0000cd;
@@ -270,7 +270,7 @@ ul.dropdown {
       border-radius: 0px;
       -moz-border-radius: 0px;
       -webkit-border-radius: 0px;
-      color: navy; }
+      color: #00008b; }
     ul.dropdown li:hover > *.dir {
       background-color: #0000cd;
       color: #ffe4b5; }
@@ -313,7 +313,7 @@ ul.dropdown {
       ul.dropdown ul ul li {
         background-color: #fffacd; }
         ul.dropdown ul ul li a, ul.dropdown ul ul li *.dir {
-          border-color: #fffacd navy navy; }
+          border-color: #fffacd #00008b #00008b; }
         ul.dropdown ul ul li:hover > *.dir {
           background-color: #fffacd;
           background-image: url(../images/comnav-arrowover2.png);
@@ -468,11 +468,11 @@ fieldset.modal-fieldset {
 fieldset.wizard-fieldset {
   margin: 0.5em 0;
   border: none;
-  background: navy; }
+  background: #00008b; }
 fieldset h3 {
   font-weight: normal;
   font-size: 1.1em;
-  color: navy;
+  color: #00008b;
   text-transform: uppercase; }
 
 .basic-form form {
@@ -481,7 +481,7 @@ fieldset h3 {
   float: none;
   display: block; }
 .basic-form label {
-  color: navy;
+  color: #00008b;
   font-size: 0.7em;
   font-weight: normal;
   text-transform: uppercase;
@@ -499,7 +499,7 @@ fieldset h3 {
   border: solid 1px #ffdead;
   font-size: medium;
   font-weight: normal;
-  color: navy; }
+  color: #00008b; }
 .basic-form input:hover {
   background: #f0f8ff; }
 .basic-form p {
@@ -507,7 +507,7 @@ fieldset h3 {
   font-style: italic;
   font-size: small;
   float: right;
-  color: navy; }
+  color: #00008b; }
 .basic-form a {
   display: inline;
   font-size: small; }
@@ -549,7 +549,8 @@ input.submit {
   margin-top: 10px;
   padding: 5px 15px;
   color: #ffe4b5;
-  background-color: navy;
+  background-image: -moz-linear-gradient(bottom, #003399, #00008b, #003399 );
+  background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #003399), color-stop(0.4, #00008b), color-stop(1, #003399)  );
   border: 2px solid #ffdead;
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -559,7 +560,8 @@ input.modal-submit {
   margin-top: 10px;
   padding: 5px 15px;
   color: #ffe4b5;
-  background-color: navy;
+  background-image: -moz-linear-gradient(bottom, #003399, #00008b, #003399 );
+  background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #003399), color-stop(0.4, #00008b), color-stop(1, #003399)  );
   border: 1px solid #ffdead;
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -584,8 +586,12 @@ input[type="hidden"] {
 
 .sidebar_box {
   line-height: 1.6em; }
-  .sidebar_box h2 {
-    text-align: center; }
+  .sidebar_box h2, .sidebar_box h3 {
+    text-align: center;
+    font-size: 1.3em;
+    padding: 5px;
+    background-image: -moz-linear-gradient(bottom, #ffefd5, #fffacd, #ffefd5 );
+    background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #ffefd5), color-stop(0.4, #fffacd), color-stop(1, #ffefd5)  ); }
   .sidebar_box ul {
     margin-bottom: 1.6em; }
   .sidebar_box li {
@@ -602,6 +608,12 @@ img.image-align-right {
   float: right;
   padding: 0 0 1em 1em; }
 
+#body_content_right h2, #body_content_right h3 {
+  text-align: center;
+  font-size: 1.3em;
+  padding: 5px;
+  background-image: -moz-linear-gradient(bottom, #ffefd5, #fffacd, #ffefd5 );
+  background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #ffefd5), color-stop(0.4, #fffacd), color-stop(1, #ffefd5)  ); }
 #body_content_right p {
   line-height: 1.4;
   font-size: 0.9em; }
@@ -622,52 +634,21 @@ img.image-align-right {
   line-height: 1.6em;
   list-style: outside; }
 
-#billboard {
-  background: url("../images/upcomingevents.png") no-repeat;
-  height: 210px;
-  padding-top: 60px;
-  padding-left: 35px;
-  padding-right: 32px; }
-  #billboard p {
-    font-size: 0.95em; }
-  #billboard h3 {
-    text-transform: uppercase;
-    margin-bottom: 0.2em; }
-  #billboard img.image-align-left {
-    float: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px; }
-  #billboard img.image-align-right {
-    float: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px; }
-
-#signup {
-  background: url("../images/signup.png") no-repeat;
-  padding-top: 60px;
-  padding-left: 35px;
-  padding-right: 35px;
-  font-size: 0.8em;
-  height: 190px; }
-
-#signup2 {
-  background: url("../images/signup2.png") no-repeat;
-  padding-top: 60px;
-  padding-left: 35px;
-  padding-right: 35px;
-  font-size: 0.8em;
-  height: 190px; }
-  #signup2 p {
-    font-size: 0.95em; }
-
-#recent_news {
-  background: url("../images/newsholder.png") no-repeat;
-  padding-left: 35px;
-  padding-right: 35px;
-  margin-bottom: 20px;
-  height: 190px; }
+#billboard p {
+  font-size: 0.95em; }
+#billboard h3 {
+  text-transform: uppercase;
+  margin-bottom: 0.2em; }
+#billboard img.image-align-left {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px; }
+#billboard img.image-align-right {
+  float: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px; }
 
 #page_image_gallery ul#gallery, #page_image_gallery ul {
   margin: 0;
@@ -686,11 +667,11 @@ img.image-align-right {
   font-family: Georgia, Palatino, serif; }
   #dailyquote .quote-top {
     background: url("../images/sdiary_top.png") no-repeat;
-    min-height: 88px; }
+    min-height: 36px; }
   #dailyquote .quote-middle {
     background: url("../images/sdiary_mid.png") repeat; }
   #dailyquote .quote-bottom {
-    min-height: 90px;
+    min-height: 37px;
     background: url("../images/sdiary_bot.png") no-repeat;
     margin-bottom: 20px; }
   #dailyquote h3.theme {

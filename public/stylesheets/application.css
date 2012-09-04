@@ -122,6 +122,11 @@ body {
 #masthead {
   height: 193px;
   background: white url("../images/masthead.jpg") no-repeat; }
+  #masthead a:hover {
+    background: transparent;
+    border: 0; }
+  #masthead img {
+    border: 0; }
 
 #nav_search_box {
   float: right;

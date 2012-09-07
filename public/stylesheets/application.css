@@ -71,7 +71,8 @@ body {
 
 #sidebar_content {
   width: 260px;
-  padding: 0 15px 0 30px; }
+  padding: 0 15px 0 30px;
+  margin-bottom: 20px; }
 
 #body_content_title {
   width: 615px;
@@ -253,12 +254,12 @@ ul.dropdown {
     float: left;
     line-height: 1.5em;
     letter-spacing: 0.2em;
-    font-size: 0.9em;
+    font-size: 0.85em;
     vertical-align: middle;
     zoom: 1;
     padding: 0;
-    background-image: -moz-linear-gradient(bottom, navy, navy, #00008b, navy );
-    background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, navy), color-stop(0.3, navy), color-stop(0.6, #00008b), color-stop(1, navy)  );
+    background-image: -moz-linear-gradient(bottom, #003399, #00008b, #003399 );
+    background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #003399), color-stop(0.4, #00008b), color-stop(1, #003399)  );
     color: #ffe4b5; }
     ul.dropdown li.hover, ul.dropdown li:hover {
       position: relative;
@@ -615,6 +616,8 @@ img.image-align-right {
 
 #body_content_right h2 {
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 1.3em;
   padding: 5px;
   background-image: -moz-linear-gradient(bottom, #ffefd5, #fffacd, #ffefd5 );

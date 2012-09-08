@@ -132,6 +132,8 @@ $NAV_TAB_BEVEL: 0px    // radius curvature for menu tab areas
   -moz-border-radius: $RADIUS
   -webkit-border-radius: $RADIUS
 
+  background: #003399  url("../images/blue_gradient.png") repeat-x
+
 =GRADIENT_BOX($LIGHT, $DARK)
   background-image: unquote("-moz-linear-gradient(bottom, #{$LIGHT}, #{$DARK}, #{$LIGHT} )")
   background-image: unquote("-webkit-gradient(linear,left bottom, left top, color-stop(0, #{$LIGHT}), color-stop(0.4, #{$DARK}), color-stop(1, #{$LIGHT})  )")
@@ -256,7 +258,7 @@ body
 #footer
   height: $FOOTER_HEIGHT
   line-height: 2.6em
-  +GRADIENT_BOX(#003399, #00008B) 
+  background: #003399  url("../images/blue_gradient.png") repeat-x
 #footer_inner_content
   color: #FFE4B5
   font-size: 0.70em
@@ -283,7 +285,7 @@ body
   margin-top: 0px
   #header_content
     height: $NAV_HEIGHT
-    +GRADIENT_BOX(#003399, #00008B)
+    background: #003399  url("../images/blue_gradient.png") repeat-x
     border-top: 1px solid #505050
  
 #masthead
@@ -629,7 +631,7 @@ input
     margin-top: 10px
     padding: 5px 15px
     color:       #FFE4B5
-    +GRADIENT_BOX(#003399, #00008B)
+    background: #003399  url("../images/blue_gradient.png") repeat-x
     border:     2px solid $FG_INPUTBOX
     +BEVEL_CORNER(10px)
 
@@ -638,7 +640,7 @@ input
     margin-top: 10px
     padding: 5px 15px
     color:       #FFE4B5
-    +GRADIENT_BOX(#003399, #00008B)
+    background: #003399  url("../images/blue_gradient.png") repeat-x
     border:     1px solid $FG_INPUTBOX
     +BEVEL_CORNER(10px)
 

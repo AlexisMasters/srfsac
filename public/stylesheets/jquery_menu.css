@@ -1,24 +1,34 @@
 /*
-Syntax error: Undefined mixin 'GRADIENT_BOX'.
-        on line 72 of /home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass, in `GRADIENT_BOX'
-        from line 72 of /home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass
+Syntax error: Undefined variable: "$BG_MENU".
+        on line 89 of /home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass
 
-67:       letter-spacing: 0.2em
-68:       font-size: 0.85em
-69:       vertical-align: middle
-70:       zoom: 1
-71:       padding: 0
-72:       +GRADIENT_BOX(#003399, #00008B)
-73:       color: $FG_TEXT
-74:       
-75:       &.hover, &:hover
-76:         position: relative
-77:         z-index: 599
+84:         border-style: solid
+85:         border-width: 1px
+86:         border-color: $DROPDOWN_BORDER_LT_2 $DROPDOWN_BORDER_DK_1 $DROPDOWN_BORDER_DK_1 $DROPDOWN_BORDER_LT_1
+87:         
+88:       a.selected    // this is the currently selected tab, at whatever level
+89:         background: $BG_MENU
+90:         +BEVEL_CORNER($NAV_TAB_BEVEL)
+91:         color: $BG_NAV
+92:         
+93:       &:hover > *.dir    // this selects uppermost li (main tabs) AFTER cursor proceeds to dropdown
+94:         background-color: $BG_MENU
 
 Backtrace:
-/home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass:72:in `GRADIENT_BOX'
-/home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass:72
-/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:170:in `visit_mixin'
+/home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass:89
+/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/script/variable.rb:49:in `_perform'
+/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/script/node.rb:40:in `perform'
+/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:216:in `visit_prop'
+/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:53:in `map'
+/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:238:in `visit_rule'
 /home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:37:in `visit'
 /home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:18:in `visit'
 /home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -142,4 +152,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'GRADIENT_BOX'.\A         on line 72 of /home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass, in `GRADIENT_BOX'\A         from line 72 of /home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass\A \A 67:       letter-spacing: 0.2em\A 68:       font-size: 0.85em\A 69:       vertical-align: middle\A 70:       zoom: 1\A 71:       padding: 0\A 72:       +GRADIENT_BOX(#003399, #00008B)\A 73:       color: $FG_TEXT\A 74:       \A 75:       &.hover, &:hover\A 76:         position: relative\A 77:         z-index: 599"; }
+  content: "Syntax error: Undefined variable: \"$BG_MENU\".\A         on line 89 of /home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass\A \A 84:         border-style: solid\A 85:         border-width: 1px\A 86:         border-color: $DROPDOWN_BORDER_LT_2 $DROPDOWN_BORDER_DK_1 $DROPDOWN_BORDER_DK_1 $DROPDOWN_BORDER_LT_1\A 87:         \A 88:       a.selected    // this is the currently selected tab, at whatever level\A 89:         background: $BG_MENU\A 90:         +BEVEL_CORNER($NAV_TAB_BEVEL)\A 91:         color: $BG_NAV\A 92:         \A 93:       &:hover > *.dir    // this selects uppermost li (main tabs) AFTER cursor proceeds to dropdown\A 94:         background-color: $BG_MENU"; }

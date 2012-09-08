@@ -92,8 +92,7 @@ body {
 #footer {
   height: 45px;
   line-height: 2.6em;
-  background-image: -moz-linear-gradient(bottom, #003399, #00008b, #003399 );
-  background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #003399), color-stop(0.4, #00008b), color-stop(1, #003399)  ); }
+  background: #003399 url("../images/blue_gradient.png") repeat-x; }
 
 #footer_inner_content {
   color: #ffe4b5;
@@ -115,8 +114,7 @@ body {
   margin-top: 0px; }
   #header #header_content {
     height: 35px;
-    background-image: -moz-linear-gradient(bottom, #003399, #00008b, #003399 );
-    background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #003399), color-stop(0.4, #00008b), color-stop(1, #003399)  );
+    background: #003399 url("../images/blue_gradient.png") repeat-x;
     border-top: 1px solid #505050; }
 
 #masthead {
@@ -177,25 +175,29 @@ body {
   background: #0000cd;
   border-radius: 0px;
   -moz-border-radius: 0px;
-  -webkit-border-radius: 0px; }
+  -webkit-border-radius: 0px;
+  background: #003399 url("../images/blue_gradient.png") repeat-x; }
 #refinery_menu div.selected a {
   color: #ffe4b5;
   background: #0000cd;
   border-radius: 0px;
   -moz-border-radius: 0px;
-  -webkit-border-radius: 0px; }
+  -webkit-border-radius: 0px;
+  background: #003399 url("../images/blue_gradient.png") repeat-x; }
 #refinery_menu a.selected, #refinery_menu a:hover {
   color: #ffe4b5;
   background: #0000cd;
   border-radius: 0px;
   -moz-border-radius: 0px;
-  -webkit-border-radius: 0px; }
+  -webkit-border-radius: 0px;
+  background: #003399 url("../images/blue_gradient.png") repeat-x; }
 #refinery_menu div:hover > a {
   color: #ffe4b5;
   background: #0000cd;
   border-radius: 0px;
   -moz-border-radius: 0px;
-  -webkit-border-radius: 0px; }
+  -webkit-border-radius: 0px;
+  background: #003399 url("../images/blue_gradient.png") repeat-x; }
 #refinery_menu li ul, #refinery_menu nav {
   position: absolute;
   left: -99999px;
@@ -206,7 +208,8 @@ body {
   background: #0000cd;
   border-radius: 0px;
   -moz-border-radius: 0px;
-  -webkit-border-radius: 0px; }
+  -webkit-border-radius: 0px;
+  background: #003399 url("../images/blue_gradient.png") repeat-x; }
 #refinery_menu li ul li, #refinery_menu nav a {
   float: left; }
 #refinery_menu li:hover ul, #refinery_menu div:hover nav {
@@ -257,8 +260,7 @@ ul.dropdown {
     vertical-align: middle;
     zoom: 1;
     padding: 0;
-    background-image: -moz-linear-gradient(bottom, #003399, #00008b, #003399 );
-    background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #003399), color-stop(0.4, #00008b), color-stop(1, #003399)  );
+    background: #003399 url("../images/blue_gradient.png") repeat-x;
     color: #ffe4b5; }
     ul.dropdown li.hover, ul.dropdown li:hover {
       position: relative;
@@ -275,6 +277,7 @@ ul.dropdown {
       border-radius: 0px;
       -moz-border-radius: 0px;
       -webkit-border-radius: 0px;
+      background: #003399 url("../images/blue_gradient.png") repeat-x;
       color: #00008b; }
     ul.dropdown li:hover > *.dir {
       background-color: #0000cd;
@@ -554,23 +557,23 @@ input.submit {
   margin-top: 10px;
   padding: 5px 15px;
   color: #ffe4b5;
-  background-image: -moz-linear-gradient(bottom, #003399, #00008b, #003399 );
-  background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #003399), color-stop(0.4, #00008b), color-stop(1, #003399)  );
+  background: #003399 url("../images/blue_gradient.png") repeat-x;
   border: 2px solid #ffdead;
   border-radius: 10px;
   -moz-border-radius: 10px;
-  -webkit-border-radius: 10px; }
+  -webkit-border-radius: 10px;
+  background: #003399 url("../images/blue_gradient.png") repeat-x; }
 input.modal-submit {
   margin-left: 80px;
   margin-top: 10px;
   padding: 5px 15px;
   color: #ffe4b5;
-  background-image: -moz-linear-gradient(bottom, #003399, #00008b, #003399 );
-  background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0, #003399), color-stop(0.4, #00008b), color-stop(1, #003399)  );
+  background: #003399 url("../images/blue_gradient.png") repeat-x;
   border: 1px solid #ffdead;
   border-radius: 10px;
   -moz-border-radius: 10px;
-  -webkit-border-radius: 10px; }
+  -webkit-border-radius: 10px;
+  background: #003399 url("../images/blue_gradient.png") repeat-x; }
 input.submit-rightmost {
   margin-left: auto;
   margin-right: 0px; }

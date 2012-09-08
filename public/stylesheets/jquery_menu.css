@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$BG_MENU".
-        on line 89 of /home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass
+        on line 90 of /home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass
 
-84:         border-style: solid
-85:         border-width: 1px
-86:         border-color: $DROPDOWN_BORDER_LT_2 $DROPDOWN_BORDER_DK_1 $DROPDOWN_BORDER_DK_1 $DROPDOWN_BORDER_LT_1
-87:         
-88:       a.selected    // this is the currently selected tab, at whatever level
-89:         background: $BG_MENU
-90:         +BEVEL_CORNER($NAV_TAB_BEVEL)
-91:         color: $BG_NAV
-92:         
-93:       &:hover > *.dir    // this selects uppermost li (main tabs) AFTER cursor proceeds to dropdown
-94:         background-color: $BG_MENU
+85:         border-style: solid
+86:         border-width: 1px
+87:         border-color: $DROPDOWN_BORDER_LT_2 $DROPDOWN_BORDER_DK_1 $DROPDOWN_BORDER_DK_1 $DROPDOWN_BORDER_LT_1
+88:         
+89:       a.selected    // this is the currently selected tab, at whatever level
+90:         background: $BG_MENU
+91:         +BEVEL_CORNER($NAV_TAB_BEVEL)
+92:         color: $BG_NAV
+93:         
+94:       &:hover > *.dir    // this selects uppermost li (main tabs) AFTER cursor proceeds to dropdown
+95:         background-color: $BG_MENU
 
 Backtrace:
-/home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass:89
+/home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass:90
 /home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/script/variable.rb:49:in `_perform'
 /home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/script/node.rb:40:in `perform'
 /home/alexis/.rvm/gems/ruby-1.9.3-rc1@gardenia-1.0/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:216:in `visit_prop'
@@ -152,4 +152,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$BG_MENU\".\A         on line 89 of /home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass\A \A 84:         border-style: solid\A 85:         border-width: 1px\A 86:         border-color: $DROPDOWN_BORDER_LT_2 $DROPDOWN_BORDER_DK_1 $DROPDOWN_BORDER_DK_1 $DROPDOWN_BORDER_LT_1\A 87:         \A 88:       a.selected    // this is the currently selected tab, at whatever level\A 89:         background: $BG_MENU\A 90:         +BEVEL_CORNER($NAV_TAB_BEVEL)\A 91:         color: $BG_NAV\A 92:         \A 93:       &:hover > *.dir    // this selects uppermost li (main tabs) AFTER cursor proceeds to dropdown\A 94:         background-color: $BG_MENU"; }
+  content: "Syntax error: Undefined variable: \"$BG_MENU\".\A         on line 90 of /home/alexis/projectspace/srfsac/public/stylesheets/sass/jquery_menu.sass\A \A 85:         border-style: solid\A 86:         border-width: 1px\A 87:         border-color: $DROPDOWN_BORDER_LT_2 $DROPDOWN_BORDER_DK_1 $DROPDOWN_BORDER_DK_1 $DROPDOWN_BORDER_LT_1\A 88:         \A 89:       a.selected    // this is the currently selected tab, at whatever level\A 90:         background: $BG_MENU\A 91:         +BEVEL_CORNER($NAV_TAB_BEVEL)\A 92:         color: $BG_NAV\A 93:         \A 94:       &:hover > *.dir    // this selects uppermost li (main tabs) AFTER cursor proceeds to dropdown\A 95:         background-color: $BG_MENU"; }

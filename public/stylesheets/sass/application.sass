@@ -71,7 +71,7 @@ $NAV_HEIGHT: 29px
 
 $HEADER_HEIGHT: $MASTHEAD_HEIGHT + $NAV_HEIGHT
 
-$FOOTER_HEIGHT: 45px
+$FOOTER_HEIGHT: 35px
 
 $STANDARD_MARGIN: 36px    // unused
 
@@ -209,7 +209,7 @@ body
   padding: 0px
   margin: 0px auto
   margin-top: 24px
-  border: 3px solid #FFDAB9
+  border: 2px solid #00008B
 
 #body, #masthead, #header_content, #footer_content, #site_bar_content
   width: $INNER_CONTENT_AREAS_WIDTH
@@ -219,8 +219,8 @@ body
   background: #FFFFFF
   min-height: $MAIN_CONTENT_HEIGHT
   padding: $STANDARD_PADDING 0
-  border-left: 4px solid #00008B
-  border-right: 4px solid #00008B
+  // border-left: 1px solid #00008B
+  // border-right: 4px solid #00008B
 
 //******************************************************************************
 // NOTE: DO NOT SPECIFY float: xxxx for main_content, sidebar_content, body_content_title
@@ -257,7 +257,7 @@ body
 // *****************************************************************************
 #footer
   height: $FOOTER_HEIGHT
-  line-height: 2.6em
+  line-height: 1.9em
   background: #003399  url("../images/blue_gradient.png") repeat-x
 #footer_inner_content
   color: #FFE4B5
@@ -286,7 +286,7 @@ body
   #header_content
     height: $NAV_HEIGHT
     background: #003399  url("../images/blue_gradient.png") repeat-x
-    border-top: 4px solid #000066
+    border-top: 2px solid #000066
  
 #masthead
   height: $MASTHEAD_HEIGHT
@@ -674,6 +674,10 @@ input[type="hidden"]
 .sidebar_box
   line-height: 1.6em
   margin-bottom: 20px
+
+  p
+    margin-left: 12px
+    margin-right: 12px
  
   h2
     text-align: center 
@@ -714,6 +718,9 @@ img.image-align-right
   p
     line-height: 1.4
     font-size: 0.90em
+    margin-left: 12px
+    margin-right: 12px
+
   ul
     margin-bottom: 1.6em
   li

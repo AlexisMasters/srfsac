@@ -61,7 +61,9 @@ body {
 #body_content {
   background: white;
   min-height: 536px;
-  padding: 30px 0; }
+  padding: 30px 0;
+  border-left: 2px solid #00008b;
+  border-right: 2px solid #00008b; }
 
 #main_content {
   width: 675px;
@@ -113,11 +115,12 @@ body {
   #header #header_content {
     height: 29px;
     background: #003399 url("../images/blue_gradient.png") repeat-x;
-    border-top: 2px solid #000066; }
+    border-top: 2px solid #00008b; }
 
 #masthead {
   height: 193px;
-  background: white url("../images/masthead.jpg") no-repeat; }
+  background: white url("../images/masthead.jpg") no-repeat;
+  border: 2px solid #00008b; }
   #masthead a:hover {
     background: transparent;
     border: 0; }

@@ -114,13 +114,11 @@ body {
   margin-top: 0px; }
   #header #header_content {
     height: 29px;
-    background: #003399 url("../images/blue_gradient.png") repeat-x;
-    border-top: 2px solid #00008b; }
+    background: #003399 url("../images/blue_gradient.png") repeat-x; }
 
 #masthead {
   height: 193px;
-  background: white url("../images/masthead.jpg") no-repeat;
-  border: 2px solid #00008b; }
+  background: white url("../images/masthead.jpg") no-repeat; }
   #masthead a:hover {
     background: transparent;
     border: 0; }

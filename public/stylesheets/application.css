@@ -33,7 +33,7 @@ a {
   cursor: pointer; }
   a:hover {
     color: black;
-    background: #f0f8ff; }
+    background: #fff8dc; }
   a:visited {
     color: #666666; }
 
@@ -90,7 +90,7 @@ body {
   width: 100%; }
 
 #footer {
-  height: 35px;
+  height: 40px;
   line-height: 1.9em;
   background: #003399 url("../images/blue_gradient.png") repeat-x; }
 

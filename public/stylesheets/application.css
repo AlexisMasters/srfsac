@@ -634,7 +634,8 @@ img.image-align-right {
     line-height: 1.4;
     font-size: 0.9em;
     margin-left: 12px;
-    margin-right: 12px; }
+    margin-right: 12px;
+    margin-top: 5px; }
   #body_content_right ul {
     margin-bottom: 1.6em; }
   #body_content_right li {
@@ -642,6 +643,12 @@ img.image-align-right {
     line-height: 1.4em;
     list-style: inside; }
 
+#body_content_left h1 {
+  margin-bottom: 5px; }
+#body_content_left h2 {
+  margin-bottom: 10px; }
+#body_content_left h3 {
+  margin-bottom: 10px; }
 #body_content_left p {
   line-height: 1.6em; }
 #body_content_left ul {

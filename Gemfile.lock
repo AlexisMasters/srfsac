@@ -138,11 +138,6 @@ GEM
       activerecord (>= 3.0.0)
       paper_trail (~> 2)
     haml (3.1.4)
-    heroku (2.21.2)
-      launchy (>= 0.3.2)
-      rest-client (~> 1.6.1)
-      rubyzip
-      term-ansicolor (~> 1.0.5)
     hominid (3.0.4)
     i18n (0.5.0)
     json (1.7.6)
@@ -327,7 +322,6 @@ DEPENDENCIES
   fog
   gherkin
   haml
-  heroku
   json_pure
   launchy
   mail

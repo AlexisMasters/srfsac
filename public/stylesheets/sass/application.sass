@@ -52,7 +52,7 @@ $FG_INPUTLABEL_DARK: #485751
 $FG_ANCHOR_LINK:    #036
 $FG_ANCHOR_VISITED: #666
 $HV_ANCHOR_LINK:    #000
-$BG_ANCHOR_HOVER:   #F0F8FF
+$BG_ANCHOR_HOVER:   #FFF8DC
 // *****************************************************************************
 
 // DIMENSIONS
@@ -67,11 +67,11 @@ $INNER_CONTENT_AREAS_WIDTH: $VIEWPORT_WIDTH - $INNER_MARGIN - $INNER_MARGIN
 
 $MASTHEAD_HEIGHT: 193px
 $MASTHEAD_PHANTOM_HEIGHT:10px    // >0 reveals background image
-$NAV_HEIGHT: 30px
+$NAV_HEIGHT: 29px
 
 $HEADER_HEIGHT: $MASTHEAD_HEIGHT + $NAV_HEIGHT
 
-$FOOTER_HEIGHT: 45px
+$FOOTER_HEIGHT: 40px
 
 $STANDARD_MARGIN: 36px    // unused
 
@@ -105,7 +105,6 @@ $FONT_SIZE_NOMINAL_EM: 13px    // this determines what 1em is: ok to use %
 
 // reference Hx used in main content area; sidebar sets the Hx to one size lower 
 // main h1 $FONT_SIZE_REF_H1, sidebar h1 $FONT_SIZE_REF_H2, etc
-4
 $FONT_SIZE_REF_H1: 1.6em       // main content reference size for h1
 $FONT_SIZE_ALT_H1: 1.4em       // main content alternate size for h1
 $FONT_SIZE_REF_H2: 1.3em       // main content reference size for h2
@@ -195,7 +194,7 @@ a
 body
   margin: 0px
   padding: 0px
-  background: #FAFAD2  url("../images/body_background.png") repeat
+  background: #FAFAD2 url("../images/body_background.png") repeat
 
 #page_container
   width: 100%
@@ -209,7 +208,7 @@ body
   padding: 0px
   margin: 0px auto
   margin-top: 24px
-  border: 3px solid #FFDAB9
+  border: 7px solid #FFE485
 
 #body, #masthead, #header_content, #footer_content, #site_bar_content
   width: $INNER_CONTENT_AREAS_WIDTH
@@ -219,8 +218,8 @@ body
   background: #FFFFFF
   min-height: $MAIN_CONTENT_HEIGHT
   padding: $STANDARD_PADDING 0
-  border-left: 4px solid #00008B
-  border-right: 4px solid #00008B
+  border-left: 2px solid #00008B
+  border-right: 2px solid #00008B
 
 //******************************************************************************
 // NOTE: DO NOT SPECIFY float: xxxx for main_content, sidebar_content, body_content_title
@@ -257,7 +256,7 @@ body
 // *****************************************************************************
 #footer
   height: $FOOTER_HEIGHT
-  line-height: 2.6em
+  line-height: 1.9em
   background: #003399  url("../images/blue_gradient.png") repeat-x
 #footer_inner_content
   color: #FFE4B5
@@ -286,7 +285,6 @@ body
   #header_content
     height: $NAV_HEIGHT
     background: #003399  url("../images/blue_gradient.png") repeat-x
-    border-top: 4px solid #000066
  
 #masthead
   height: $MASTHEAD_HEIGHT
@@ -668,12 +666,16 @@ input[type="hidden"]
 // *****************************************************************************
 
 
-*****************************************************************************
+// *****************************************************************************
 // *****************************************************************************
 
 .sidebar_box
   line-height: 1.6em
   margin-bottom: 20px
+
+  p
+    margin-left: 12px
+    margin-right: 12px
  
   h2
     text-align: center 
@@ -714,6 +716,10 @@ img.image-align-right
   p
     line-height: 1.4
     font-size: 0.90em
+    margin-left: 12px
+    margin-right: 12px
+    margin-top: 5px
+
   ul
     margin-bottom: 1.6em
   li
@@ -752,8 +758,6 @@ img.image-align-right
     padding-top: 10px
     padding-bottom: 10px
     padding-left: 10px
-
-#recent_news
 
 // *****************************************************************************
 // page-image formatting here

@@ -16,7 +16,7 @@ GETTING STARTED / ORGINATION
 	login: alexisdavid
 	password: davidalexis
 7. setup an Amazon S3 account & buckets... then:
-	heroku config:add S3_KEY=AKIAJWMKYYC6DNN5NSCA S3_SECRET=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 S3_BUCKET=dev.majozi.com
+	heroku config:add S3_KEY=<key> S3_SECRET=<key> S3_BUCKET=<key>
 8. add html whitelist to config/application.rb
     
     # add video tags to sanitize permitted tags

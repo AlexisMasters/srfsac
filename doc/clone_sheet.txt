@@ -74,7 +74,7 @@ $  heroku addons:add pgbackups:basic
 $  heroku addons:add zerigo_dns:basic
 
 $  heroku config:add BUNDLE_WITHOUT="development:test:linux:mac"
-$  heroku config:add S3_BUCKET=nfe_assets S3_KEY=AKIAJLXVHKBPV4JMI5KA S3_SECRET=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
+$  heroku config:add S3_BUCKET=<key> S3_KEY=<key> S3_SECRET=<key>
 
 $  git push heroku master
 

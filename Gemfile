@@ -6,13 +6,12 @@ gem 'rails', '3.0.20'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :linux do
-  gem 'pg'
-end
+  gem  'thin'
+  gem  'rdoc'
+  gem  'pg'      # COMMENT THIS OUT IF MAC DEV!
 
-group :mac do
-  gem 'sqlite3-ruby', ">= 1.3.3", :require => 'sqlite3'
-end
+#  uncommment below if MAC dev!
+#  gem 'sqlite3-ruby', ">= 1.3.3", :require => 'sqlite3'
 
 
 # Use unicorn as the web server

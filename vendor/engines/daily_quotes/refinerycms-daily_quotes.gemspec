@@ -4,6 +4,7 @@ Gem::Specification.new do |s|
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Daily Quotes engine for Refinery CMS'
   s.date              = '2011-10-13'
+  s.authors           = 'd anderson'
   s.summary           = 'Daily Quotes engine for Refinery CMS'
   s.require_paths     = %w(lib)
   s.files             = Dir['lib/**/*', 'config/**/*', 'app/**/*']

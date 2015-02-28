@@ -4,6 +4,7 @@ Gem::Specification.new do |s|
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Event Calendars engine for Refinery CMS'
   s.date              = '2012-05-23'
+  s.authors           = 'd anderson'
   s.summary           = 'Event Calendars engine for Refinery CMS'
   s.require_paths     = %w(lib)
   s.files             = Dir['lib/**/*', 'config/**/*', 'app/**/*']
